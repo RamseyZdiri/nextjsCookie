@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "airbnb"
+  ],
+  "rules": { 
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "linebreak-style": 0
+  },
+  "settings": {
+    "alias": {
+      "map": [
+        ["@",  "./"]
+      ]
+    }
+  }
+}
