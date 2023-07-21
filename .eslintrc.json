@@ -17,8 +17,9 @@
   "settings": {
     "alias": {
       "map": [
-        ["@",  "./"]
-      ]
+        ["@/",  "./*"]
+      ],
+      "extensions": [".js", ".jsx"]
     }
   }
 }

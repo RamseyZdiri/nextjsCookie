@@ -1,5 +1,5 @@
 import axios from 'axios';
-import components from '@/src/components';
+import components from '@/components';
 
 export default function slug({ data }) {
   // rename widgets
@@ -7,13 +7,13 @@ export default function slug({ data }) {
   return (
     <div>
       {
-          items.length > 0 && items.map(({ content }) => {
-            const Component = components[content.contentType] || null;
-            return (
-              Component && <Component data={content} key={content.contentType} />
-            );
-          })
-        }
+        items.length > 0 && items.map(({ content }) => {
+          const Component = components[content.contentType] || null;
+          return (
+            Component && <Component data={content} key={content.contentType} />
+          );
+        })
+      }
     </div>
   );
 }
