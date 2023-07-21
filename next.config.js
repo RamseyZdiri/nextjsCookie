@@ -1,5 +1,3 @@
-const path = require('path');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -11,11 +9,6 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
-  },
-  webpack: (config) => {
-    // eslint-disable-next-line no-param-reassign
-    config.resolve.alias['@/components'] = path.join(__dirname, 'path/to/your/components/folder');
-    return config;
   },
 };
 
